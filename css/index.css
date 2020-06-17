@@ -1,0 +1,546 @@
+/*
+* @Author: Administrator
+* @Date:   2018-07-10 08:47:18
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-07-13 14:37:38
+*/
+.header{
+background-color: #fff;
+height: 105px;
+position: fixed;
+z-index: 99;
+width: 100%;
+border-bottom: 1px solid #ccc;
+}
+.header .logo{
+width: 200px;
+height: 105px;
+float: left;
+display: block;
+
+}
+.header .logo a{
+display: block;
+width: 100%;
+height: 100%;
+padding:30px 0 ;
+background-image: url(../img/spirite.png);
+background-position: 0 25px;
+text-indent: -99999px;
+/* 因为背景图会穿透paadding值，所以从内容区开始裁剪 */
+background-clip: content-box ;
+/* 改变盒子模型的显示方式，宽高设置了多少，盒子最终宽高就是多少 */
+box-sizing:border-box;
+
+}
+
+.header .nav{
+	width: 828px;
+	height: 105px;
+    float: right;
+    /* 子绝父相 */
+    position: relative;
+}
+.header .nav .top{
+height: 42px;
+line-height: 42px;
+float: right;
+}
+.header .nav .top a{
+	color: #9f9f9f;
+
+}
+.header .nav .top a.active{
+	color: red;
+}
+.header .nav .top a span{
+color: red;
+}
+.header .nav .bottom{
+height: 62px;
+width: 100%;
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
+.header .nav .bottom li{
+	line-height: 62px;
+	float: left;
+	margin: 0 27px;
+	font-size: 18px;
+
+}
+.header .nav .bottom li:first-child{
+	margin-left: 0;
+}
+.header .nav .bottom .search{
+	width: 202px;
+	height: 62px;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      padding-left: 30px;
+      padding-top: 15px;
+      box-sizing: border-box;
+
+}
+.header .nav .bottom .search input{
+	width: 170px;
+	height: 30px;
+	border: 1px solid #ccc;
+	padding-left: 4px;
+	box-sizing: border-box;
+
+}
+.header .nav .bottom .search i{
+position: absolute;
+right: 4px;
+top: 20px;
+color: #ccc;
+font-size: 18px;
+}
+/* header结束 */
+
+/*  banner 开始*/
+.banner{
+	height: 640px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 105px;
+}
+.banner ul {
+	height: 640px;
+}
+.banner ul.carousel li{
+	width: 100%;
+	height: 100%;
+}
+.banner ul.carousel li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.banner ul.carousel li:nth-child(2) a{
+	background-image: url(../img/bg1.jpg);
+}
+.banner ul.carousel li:nth-child(3) a{
+	background-image: url(../img/bg2.jpg);
+}
+.banner ul.dott{
+	width: 178px;
+	height: 5px;
+	position: absolute;
+	left: 50%;
+	margin-left: -89px;
+	bottom: 14px;
+}
+.banner ul.dott li{
+	width: 50px;
+	height:5px ;
+	margin-right: 14px;
+	float: left;
+	background-color: #fff;
+
+
+}
+.banner ul.dott li:last-child{
+	margin-right: 0px;
+}
+.banner ul.dott .active{
+	background-color: #ff6a00;
+}
+.banner .arrow{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+.banner .arrow .banxin{
+	height: 0px;
+	position: relative;
+}
+.banner .arrow .banxin .arrow_left,
+.banner .arrow .banxin .arrow_right{
+	position: absolute;
+	width: 30px;
+	height: 50px;
+}
+.banner .arrow .banxin .arrow_left{
+	background-image: url(../img/left.png);
+	left: 0px;
+}
+.banner .arrow .banxin .arrow_right{
+	background-image: url(../img/right.png);
+	right:0px;
+}
+/*  banner结束*/
+.star_goods{
+	height: 452px;
+	background-color: #fff;
+}
+.star_goods .title h3{
+	height: 125px;
+	line-height: 125px;
+	text-align: center;
+	font-size: 30px;
+}
+.star_goods .goods_area{
+	height: 270px;
+}
+.star_goods .goods_area ul li{
+	float: left;
+	margin-right: 11px;
+}
+.star_goods .goods_area ul li a{
+	display: block;
+	width: 100%；
+	height:100%;
+}
+.stat_goods .goods_area ul li a img{
+	display: block;
+}
+.star_goods .goods_area ul li:last-child{
+	margin-right: 0px;
+}
+.goods_title {
+	height: 124px;
+}
+.goods_title .banxin{
+	position: relative;
+}
+.goods_title h3{
+	height: 124px;
+	text-align: center;
+	line-height: 124px;
+	font-size: 30px;
+}
+.goods_title a{
+	position: absolute;
+	right: -4px;
+	bottom: 18px;
+}
+.hot_goods{
+	height: 785px;
+}
+/* .hot_goods .banxin{
+    background-color: pink;
+} */
+.hot_goods .left{
+	width: 306px;
+	height: 100%;
+	float: left;
+}
+.hot_goods .left:hover{
+	box-shadow: 0px 4px 20px 5px #ccc;
+	transform: translateY(-4px);
+	transition: all 0.5s;
+}
+.hot_goods .left a{
+	widows: 100%;
+	height: 100%;
+}
+.hot_goods .left a img{
+	display: block;
+}
+.hot_goods .right{
+	width: 880px;
+	height: 785px;
+	float: right;
+}
+.hot_goods .right ul li{
+	width:290px;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: #fff;
+}
+.hot_goods .right ul li:nth-child(3n){
+	margin-right: 0px;
+}
+.hot_goods .right ul li:nth-child(n+4){
+	margin-bottom: 0px;
+}
+.hot_goods .right ul li:hover{
+	box-shadow: 0px 4px 20px 5px #ccc;
+	transform: translateY(-4px);
+	transition: all 0.5s;
+}
+.hot_goods .right ul li .top{
+	width: 100%;
+	height: 262px;
+	text-align: center;
+}
+.hot_goods .right ul li .top a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.hot_goods .right ul li .top img{
+	width: 118px;
+	height: 242px;
+}
+.hot_goods .right ul li .bottom{
+	height: 128px;
+	padding-top: 14px;
+	box-sizing: border-box;
+}
+.hot_goods .right ul li .bottom p{
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+}
+.fineparts .banxin ul li a .content p:nth-child(1),
+.hot_goods .right ul li .bottom p:nth-child(1){
+	font-size: 16px;
+}
+.fineparts .banxin ul li a .content p:nth-child(2),
+.hot_goods .right ul li .bottom p:nth-child(2){
+	font-size: 14px;
+	color: #ccc;
+}
+.fineparts .banxin ul li a .content p:nth-child(3),
+.hot_goods .right ul li .bottom p:nth-child(3){
+	font-size: 20px;
+	line-height: normal;
+	padding-top: 14px;
+	color: #fe6a00;
+}
+.fineparts .banxin ul li a .content p:nth-child(3) span,
+.hot_goods .right ul li .bottom p:nth-child(3) span{
+	font-size: 14px;
+}
+.fineparts{
+	height:704px;
+}
+.fineparts .banxin{
+	
+}
+.fineparts .banxin ul li{
+	width: 386px;
+	height: 343px;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+	background-color: #fff;
+	margin-bottom: 16px;
+}
+.fineparts .banxin ul li a{
+	width: 100%;
+	height: 100%;
+}
+.fineparts .banxin ul li a img{
+	width: 386px;
+	height: 343px;
+}
+.fineparts .banxin ul li a .content{
+	position: absolute;
+	width: 386px;
+    bottom:26px;
+    text-align: center;
+}
+.fineparts .banxin ul li:hover{
+	box-shadow: 0px 4px 20px 5px #ccc;
+	transform: translateY(-4px);
+	transition: all 0.5s;
+}
+.brand{
+	height: 503px;
+	background-color: #fff;
+	margin-top: 78px;
+}
+.brand .banxin .top{
+	height: 125px;
+	width: 100%;
+	line-height: 125px;
+	text-align: center;
+	font-size: 26px;
+}
+.brand .banxin .bottom{
+	height:377px;
+}
+.brand .banxin .bottom li{
+	float: left;
+	margin-right: 16px;
+}
+.brand .banxin .bottom li:nth-child(3){
+	margin-right: 0px;
+}
+.footer{
+	padding:78px 0px 40px 0px;
+	background-color: #fff;
+}
+.footer .top{
+	border-bottom: 1px solid #ccc;
+	height: 100px;
+}
+.footer .banxin{
+	height: 46px;
+}
+.footer ul li{
+	height: 46px;
+	line-height: 23px;
+	width: 290px;
+	font-size: 18px;
+	color: #777777;
+	float: left;
+}
+.footer ul li span{
+	width: 46px;
+	height: 46px;
+	background-image: url(../img/spirite.png);
+	margin-right: 11px;
+	float: left;
+}
+.footer ul li:nth-child(1) span{
+	background-position: 0px -60px;
+}
+.footer ul li:nth-child(2) span{
+	background-position: -46px -60px;
+}
+.footer ul li:nth-child(3) span{
+	background-position: -92px -60px;
+}
+.footer ul li:nth-child(4) span{
+	background-position: -138px -60px;
+}
+.footer .guide{
+	height: 292px;
+	background-color: #fff;
+}
+.footer .guide dl{
+	width: 215px;
+	padding-top: 33px;
+	color: #777777;
+	float: left;
+}
+.footer .guide dl dt{
+	height: 34px;
+	line-height: 34px;
+	font-size: 16px;
+}
+.footer .guide dl dd{
+	height: 34px;
+	line-height: 34px;
+	font-size: 12px;
+}
+.footer .guide .erweima{
+	width: 104px;
+	padding-top: 31px;
+	float:left;
+	color: #777777;
+	text-align: center;
+}
+.footer .guide .erweima .erweima_top{
+	width: 102px;
+	height: 103px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background-image:url(../img/spirite.png);
+	background-position: -278px 2px ;
+}
+.footer .bottom{
+	background-color: #333333;
+	height: 157px;
+	color: #7f9999;
+}
+.footer .bottom a{
+	color: #7f9999;
+}
+.footer .bottom .banxin>div{
+	height: 44px;
+	line-height: 44px;
+}
+.footer .bottom .banxin>div:nth-child(1){
+	padding-top: 11px;
+}
+.footer .bottom a img{
+	vertical-align: middle;
+}
+.footer .bottom .one{
+	position: relative;
+}
+.footer .bottom .one div{
+	position: absolute;;
+	top: 10px;
+	left: 60px;
+	width: 90px;
+}
+.footer .bottom .one div .san{
+	width: 0px;
+	height: 0px;
+	border-top: 5px solid #fff;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+	right: 5px;
+	top:10px;
+}
+.footer .bottom .one div{
+	margin-top: 11px;
+	padding:5px;
+	height: 10px;
+	overflow: hidden;
+	line-height: normal;
+}
+.footer .bottom .one div:hover{
+	height: 55px;
+	background-color: #474747;
+	border-radius:5px;
+	transition: all 1s; 
+}
+.footer .bottom .one div:hover span{
+	transform: rotate(180deg);
+	transition: all 1s; 
+	border-top: 5px solid #fff;
+}
+.footer .bottom .one div p{
+	padding-top: 5px;
+	line-height: 15px;
+}
+.nav_menu{
+	border: 1px solid #ccc;
+	position: fixed;
+	top: 50%;
+	margin-top: -148px;
+	right: 8px;
+}
+.nav_menu li{
+	width: 60px;
+	height: 70px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	text-align: center;
+}
+.nav_menu li span{
+
+}
+.nav_menu ul li div{
+	width: 100%;
+	font-size: 28px;
+	height: 48px;
+	color: #ccc;
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+.nav_menu ul li i{
+	font-size: normal;
+}
+.nav_menu ul li:last-child
+{
+	height: 82px;
+	padding:6px 6px 0px 6px;
+	box-sizing: border-box;
+}
+.nav_menu ul li:last-child div{
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/spirite.png);
+	background-position: -138px 1px;
+	background-size: 256px 350px;
+}

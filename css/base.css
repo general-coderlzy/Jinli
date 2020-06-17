@@ -1,0 +1,59 @@
+/*
+* @Author: WCM
+* @Date:   2018-06-27 16:20:48
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-07-10 08:51:57
+*/
+/* 下面是所有页面都可以用的公共代码 */
+/* 清除元素的默认内外边距 */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
+	margin:0;
+	padding:0;
+} 
+body{
+	font: 12px/1.5 Tahoma, "Hiragino Sans GB", "Microsoft YaHei", arial, simsun, sans-serif;
+	background-color: #e5e5e5;
+}
+/* 清除a标签的默认下滑线 */
+a{
+	text-decoration: none;
+	color: #000;
+}
+/* 清除input表单元素的默认边框和默认外边框 */
+input{
+	border:0;
+	outline: 0;
+}
+/* 清除ul,ol里面的li的默认小点 */
+ul,ol{
+	list-style: none;
+}
+
+table {
+    border-collapse: collapse; /*collapse 为表格设置合并边框模型  separate（默认）:边框分离模型*/
+}
+textarea {
+    overflow: auto; /*内容超出容器，则会出现滚动条*/
+    resize: none;/*禁止大小的可拖动*/
+}
+/* 清除浮动的代码 */
+.clearfix::after,.clearfix::before{
+	content: "."; /* 伪元素必须配合content来使用 */
+	display: block; /* 因为伪元素是行内元素,要把它转成块级元素 */
+	clear:both; /* 真正清除浮动的代码,清除浮动,形成挡板 */
+	height:0; /* 高度设置为0,伪元素不占页面的布局的位置 */
+	visibility: hidden; /* 把content里面的小点 "." 隐藏掉 */
+}
+.clearfix{
+	*zoom:1; /*兼容ie6,ie7*/
+}
+
+/* 下面是页面的公共样式 */
+/* 版心 */
+.banxin{
+	width: 1192px;
+	margin: 0 auto;
+}
+.pr{
+	position: relative;
+}
